@@ -2,7 +2,7 @@
 
 git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D
 
-# List and Edit Local Configs
+# Local Configs
 
 git config --list --local
 
@@ -10,7 +10,7 @@ git config user.name "name"
 
 git config user.email "email@example.com"
 
-# List and Edit Global Configs
+# Global Configs
 
 git config --list
 
